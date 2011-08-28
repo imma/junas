@@ -5,3 +5,5 @@ call pathogen#infect()
 call pathogen#helptags()
 
 colorscheme xoria256
+
+source ~/.vim/junas
