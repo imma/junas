@@ -11,7 +11,10 @@ Then add this to the top of your ~/.vimrc
     source ~/.vim/junas
 
     " install whatever bundles over the net
-    call Bundle(["The_NERD_tree", "surround", "repeat", "Rainbow_Parenthesis", "The_NERD_Commenter", "haml.zip", "Markdown_syntax", "matchit.zip", "fugitive", "eregex"])
+    call Bundle(["The_NERD_tree", "The_NERD_Commenter"])
+    call Bundle(["surround", "repeat", "Rainbow_Parenthesis", "matchit.zip", "supertab", "eregex"])
+    call Bundle(["fugitive", "git.zip", "Gist",  "cucumber.zip", "rake"])
+    call Bundle(["haml.zip", "markdown", "Better_Javascript_Indentation", "Textile_for_VIM", "vim-coffee-script", "Vim_Rspec"])
 
     " map whatever key to leader
     let mapleader = ","
