@@ -4170,8 +4170,8 @@ let s:scm_plugin_sources['commentary'] = { 'type': 'git', 'url': 'git://github.c
 " " The following plugin is present on vim.org, but does not belong to Tim Pope
 " let s:scm_plugin_sources['liquid'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-liquid' }
 " " The following plugins are not present on vim.org
-" let s:scm_plugin_sources['markdown'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-markdown' }
-" let s:scm_plugin_sources['rake'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-rake' }
+let s:scm_plugin_sources['markdown'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-markdown' }
+let s:scm_plugin_sources['rake'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-rake' }
 " let s:scm_plugin_sources['flatfoot'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-flatfoot' }
 
 " Marty Grenfell
