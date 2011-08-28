@@ -1,6 +1,13 @@
 # junas: vim Distribution based on Janus
 
-junas is based on Janus.  To get started, clone junas to ~/.vim
+Janus is great, it's introduced a lot of my coworkers to vim.  I just
+want to use pathogen, vim-addon-manager, and limit the Janus
+configuration to a very small, sane, modern recommendations of the vim
+core.  junas is Janus with a few things switched around.
+
+## Getting Started
+
+Clone junas to ~/.vim
 
     mv .vim .vim.original
     git clone https://github.com/HeSYINUvSBZfxqA/junas .vim
@@ -10,19 +17,17 @@ Then add this to the top of your ~/.vimrc
     " source junas
     source ~/.vim/junas
 
-    " install whatever bundles over the net
+    " install bundles over the net
     call Bundle(["The_NERD_tree", "The_NERD_Commenter"])
     call Bundle(["surround", "repeat", "Rainbow_Parenthesis", "matchit.zip", "supertab", "eregex"])
     call Bundle(["fugitive", "git.zip", "Gist",  "cucumber.zip", "rake", "Vim_Rspec"])
     call Bundle(["haml.zip", "markdown", "Better_Javascript_Indentation", "Textile_for_VIM", "vim-coffee-script"])
 
-    " map whatever key to leader
+    " map your favorite key to leader
     let mapleader = ","
 
     " use the xoria256 color scheme (included)
     colorscheme xoria256
-
-    " and anything else you want to override or set
 
 # Janus: Carlhuda's vim Distribution
 
