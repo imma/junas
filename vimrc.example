@@ -1,9 +1,0 @@
-set runtimepath+=~/.vim/bundle/vam,~/.vim/bundle/vim-addon-manager-known-repositories
-call vam#ActivateAddons(["The_NERD_tree", "surround", "repeat", "Rainbow_Parenthesis", "The_NERD_Commenter", "haml.zip", "Markdown_syntax", "matchit.zip", "fugitive", "eregex"], {'auto_install' : 1 })
-
-call pathogen#infect()
-call pathogen#helptags()
-
-colorscheme xoria256
-
-source ~/.vim/junas
