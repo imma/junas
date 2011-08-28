@@ -1,4 +1,9 @@
-Junas is based on Janus.  To get started, add this to the top of your ~/.vimrc.
+Junas is based on Janus.  To get started, clone junas to ~/.vim
+
+    mv .vim .vim.original
+    git clone https://github.com/HeSYINUvSBZfxqA/junas .vim
+
+Then add this to the top of your ~/.vimrc
 
     set runtimepath+=~/.vim/bundle/vam,~/.vim/bundle/vim-addon-manager-known-repositories
     call vam#ActivateAddons(["The_NERD_tree", "surround", "repeat", "Rainbow_Parenthesis", "The_NERD_Commenter", "haml.zip", "Markdown_syntax", "matchit.zip", "fugitive", "eregex"], {'auto_install' : 1 })
@@ -8,7 +13,10 @@ Junas is based on Janus.  To get started, add this to the top of your ~/.vimrc.
 
     colorscheme xoria256
 
-Still working on porting the janus vimrc to junas.
+Still working on porting the janus vimrc to junas.  When it's done, source it
+in your ~/.vimrc before your custom vim settings.
+
+    source ~/.vim/junas
 
 # Janus: Carlhuda's vim Distribution
 
