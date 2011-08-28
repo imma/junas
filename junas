@@ -10,7 +10,6 @@ set runtimepath+=~/.vim/bundle/vim-addon-manager-known-repositories
 set nocompatible
 
 set number
-set ruler
 syntax on
 
 " Set encoding
@@ -35,10 +34,6 @@ set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*
 
 " Status bar
 set laststatus=2
-
-" NERDTree configuration
-let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
-map <Leader>n :NERDTreeToggle<CR>
 
 " Remember last location in file
 if has("autocmd")
@@ -92,15 +87,6 @@ map <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
 " Command mode: Ctrl+P
 cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 
-" gist-vim defaults
-if has("mac")
-  let g:gist_clip_command = 'pbcopy'
-elseif has("unix")
-  let g:gist_clip_command = 'xclip -selection clipboard'
-endif
-let g:gist_detect_filetype = 1
-let g:gist_open_browser_after_post = 1
-
 " Use modeline overrides
 set modeline
 set modelines=10
@@ -109,9 +95,5 @@ set modelines=10
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
 
-" % to bounce from do to end etc.
-runtime! macros/matchit.vim
-
 " Show (partial) command in the status line
 set showcmd
-
