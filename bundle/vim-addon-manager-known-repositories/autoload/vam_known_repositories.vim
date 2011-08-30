@@ -22,9 +22,6 @@ fun! vam_known_repositories#MergeSources(plugin_sources, www_vim_org, scm_plugin
   if merge_strategy != 'never'
     for scm in ['hg', 'git', 'svn', 'bzr']
       if !executable(scm)
-        echohl ErrorMsg
-        echomsg scm." executable is not found. Removing sources that depend on it"
-        echohl None
         call filter(a:scm_plugin_sources, 'v:val.type!=#"'.scm.'"')
       endif
     endfor
