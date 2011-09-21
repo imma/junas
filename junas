@@ -98,3 +98,17 @@ set directory=~/.vim/backup
 
 " Show (partial) command in the status line
 set showcmd
+
+" key bindings
+nnoremap ; :
+
+" ,ml appends a modeline
+function! AppendModeline()
+  let l:modeline = printf(" %s: set ts=%d sw=%d tw=%d :", "vim", &tabstop, &shiftwidth, &textwidth)
+  let l:modeline = substitute(&commentstring, "%s", l:modeline, "")
+  call append(line("$"), l:modeline)
+endfunction
+nnoremap <silent> <Leader>ml :call AppendModeline()<CR>
+
+" jj mapped to escape: http://vim.wikia.com/wiki/Avoid_the_escape_key
+imap jj <Esc>
