@@ -1,7 +1,6 @@
 fun Bundle(addons)
   call vam#ActivateAddons(a:addons, {'auto_install' : 1 })
   call pathogen#infect()
-  call pathogen#helptags()
 endf
 
 set runtimepath+=~/.vim/bundle/vam
