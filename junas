@@ -108,3 +108,16 @@ function! AppendModeline()
   call append(line("$"), l:modeline)
 endfunction
 nnoremap <silent> <Leader>ml :call AppendModeline()<CR>
+
+" from http://www.reddit.com/r/vim/comments/p0ibb/vim_plugin_that_shows_a_userdefinable_quick/c3ljwh1
+function! ToggleVimReference()
+    if !exists("s:vim_reference_open") || s:vim_reference_open == 0
+        let s:vim_reference_open = 1
+        execute "botright vnew " . g:vim_reference_file
+        execute "vertical resize " . g:vim_reference_width
+    else
+        update
+        execute "bdelete " . g:vim_reference_file
+        let s:vim_reference_open = 0
+    endif
+endfunction
