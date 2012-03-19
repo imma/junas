@@ -2,5 +2,8 @@
 
 cmd_vi=$(which vim 2>&-)
 [[ -x $cmd_vi ]] || cmd_vi=$(which mvim 2>&-)
-[[ -x $cmd_vi ]] && alias vi=$cmd_vi
-export EDITOR=vim
+
+if [[ -x $cmd_vi ]]; then
+  alias vi="$cmd_vi -X"
+  export EDITOR="$cmd_vi -X"
+fi
