@@ -4,7 +4,6 @@ fun Bundle(addons)
 endf
 
 set runtimepath+=~/.vim/bundle/vam
-set runtimepath+=~/.vim/bundle/vim-addon-manager-known-repositories
 
 set nocompatible
 
