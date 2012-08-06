@@ -1,122 +1,20 @@
-# junas: vim Distribution based on Janus
+# Getting started
 
-Janus is great, it's introduced a lot of my coworkers to vim.  I just
-want to use pathogen, vim-addon-manager, and limit the Janus
-configuration to a very small, sane, modern recommendations of the vim
-core.  junas is Janus with a few things switched around.
+Clone this project to ~/.junas; symlink .junas to ~/.vim
 
-## Getting Started
-
-Clone junas to ~/.vim
-
-    mv .vim .vim.original
-    git clone https://github.com/HeSYINUvSBZfxqA/junas .vim
-
-    cd .vim
-    git submodule update --init --recursive
-
-Then add this to the top of your ~/.vimrc
+Load junas in ~/.vimrc with:
 
     " source junas
     source ~/.vim/junas
 
+Install bundles like this:
+
     " install whatever bundles over the net
-    silent call Bundle(["The_NERD_tree", "The_NERD_Commenter", "powerline"])
+    silent call Bundle(["xoria256", "vim-colors-solarized"])
     silent call Bundle(["surround", "repeat", "Rainbow_Parenthesis", "matchit.zip", "eregex"])
-    silent call Bundle(["fugitive", "git.zip", "Gist",  "cucumber.zip", "rake"])
-    silent call Bundle(["haml.zip", "Better_Javascript_Indentation", "Textile_for_VIM", "vim-coffee-script", "vim-ruby"])
+    silent call Bundle(["The_NERD_tree", "The_NERD_Commenter", "powerline"])
 
-    " use the xoria256 color scheme (included)
+Select a color scheme:
+
+    " use the xoria256 color scheme
     colorscheme xoria256
-
-
-# Janus: Carlhuda's vim Distribution
-
-This is a basic distribution of vim plugins and tools intended to be run
-on top of the latest MacVIM snapshot.
-
-We (Carl and Yehuda) both use this distribution for our own use, and
-welcome patches and contributions to help make it an effective way to
-get started with vim and then use it productively for years to come.
-
-At present, we are still learning to use vim ourselves, so you should
-anticipate a period of rapid development while we get a handle on the
-best tools for the job. So far, we have mostly integrated existing
-plugins and tools, and we anticipate to continue doing so while also
-writing our own plugins as appropriate.
-
-In general, you can expect that the tools we use work well together and
-that we have given careful thought to the experience of using MacVIM
-with the tools in question. If you run into an issue using it, please
-report an issue to the issue tracker.
-
-# Intro to VIM
-
-Here's some tips if you've never used VIM before:
-
-## Tutorials
-
-* Type `vimtutor` into a shell to go through a brief interactive
-  tutorial inside VIM.
-* Read the slides at [VIM: Walking Without Crutches](http://walking-without-crutches.heroku.com/#1).
-* Watch the screencasts at [vimcasts.org](http://vimcasts.org/)
-* Watch Derek Wyatt's energetic tutorial videos at [his site](http://www.derekwyatt.org/vim/vim-tutorial-videos/)
-* Read wycats' perspective on learning vim at
-  [Everyone who tried to convince me to use vim was wrong](http://yehudakatz.com/2010/07/29/everyone-who-tried-to-convince-me-to-use-vim-was-wrong/)
-* Read this and other answers to a question about vim at StackOverflow:
-  [Your problem with Vim is that you don't grok vi](http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118)
-
-## Modes
-
-* VIM has two modes:
-  * insert mode- stuff you type is added to the buffer
-  * normal mode- keys you hit are interpretted as commands
-* To enter insert mode, hit `i`
-* To exit insert mode, hit `<ESC>`
-
-## Useful commands
-
-* Use `:q` to exit vim
-* Certain commands are prefixed with a `<Leader>` key, which maps to \\
-  by default. Use `let mapleader = ","` to change this.
-* Keyboard [cheat sheet](http://walking-without-crutches.heroku.com/image/images/vi-vim-cheat-sheet.png).
-
-# Features
-
-This vim distribution includes a number of packages built by others.
-
-## Base Customizations
-
-Ships with a number of basic customizations for vim:
-
-* Line numbers
-* Ruler (line and column numbers)
-* No wrap (turn off per-buffer via set :wrap)
-* Soft 2-space tabs, and default hard tabs to 2 spaces
-* Make searching highlighted, incremental, and case insensitive unless a
-  capital letter is used
-* Always show a status line
-* Allow backspacing over everything (identations, eol, and start
-  characters) in insert mode
-* `<Leader>e` expands to `:e {directory of current file}/` (open in the
-  current buffer)
-* `<Leader>tr` expands to `:te {directory of current file}/` (open in a
-  new MacVIM tab)
-* `<C-P>` inserts the directory of the current file into a command
-
-## Additional Syntaxes
-
-Ships with a few additional syntaxes:
-
-* Markdown (bound to \*.markdown, \*.md, \*.mk, and \*.mkd))
-* Mustache (bound to \*.mustache)
-* Haml (bound to \*.haml)
-* Sass (bound to \*.sass)
-* SCSS (bound to \*.scss)
-* An improved JavaScript syntax (bound to \*.js)
-* Map Gemfile, Rakefile, Vagrantfile and Thorfile to Ruby
-
-## Color schemes
-
-Includes the vim color scheme xoria256.
-
