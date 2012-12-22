@@ -1,0 +1,6 @@
+---
+remotes:
+  primary: git@github.com:destructuring/junas
+  secondary: git@bitbucket.org:destructuring/junas
+  sh: https://github.com/destructuring/jason
+  bump: https://github.com/destructuring/mixin-bump
