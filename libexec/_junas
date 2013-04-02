@@ -13,7 +13,7 @@ function vi {
     fi
   fi
 
-  $_junas_cmd_vi -X
+  $_junas_cmd_vi -X "$@"
 
   if [[ -x "$pth_xc" ]]; then
     xtermcontrol --bg="$old_bg"
