@@ -1,0 +1,26 @@
+#!/bin/bash
+
+_junas_cmd_vi=$(type -P vim || type -P mvim || true)
+
+function vi {
+  local pth_xc="$(type -P xtermcontrol || true)"
+
+  local old_bg=
+  if [[ -x "$pth_xc" ]]; then
+    old_bg="$(xtermcontrol --get-bg || true)"
+    if [[ -n "$old_bg" ]]; then
+      xtermcontrol --bg=rgb:1c1c/1c1c/1c1c
+    fi
+  fi
+
+  $_junas_cmd_vi -X
+
+  if [[ -x "$pth_xc" ]]; then
+    xtermcontrol --bg="$old_bg"
+  fi
+}
+
+
+if [[ -x $_junas_cmd_vi ]]; then
+  export EDITOR="$_junas_cmd_vi -X"
+fi
