@@ -1,6 +1,6 @@
 [submodule "bundle/vam"]
 	path = bundle/vam
-	url = https://github.com/MarcWeber/vim-addon-manager.git
+	url = git@github.com:MarcWeber/vim-addon-manager.git
 [submodule "bundle/vim-addon-manager-known-repositories"]
 	path = bundle/vim-addon-manager-known-repositories
-	url = https://github.com/MarcWeber/vim-addon-manager-known-repositories.git
+	url = git@github.com:MarcWeber/vim-addon-manager-known-repositories.git
