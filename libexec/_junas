@@ -22,5 +22,5 @@ function vi {
 
 
 if [[ -x $_junas_cmd_vi ]]; then
-  export EDITOR="$_junas_cmd_vi -X"
+  export EDITOR="$_junas_cmd_vi"
 fi
