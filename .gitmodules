@@ -3,4 +3,4 @@
 	url = git@github.com:MarcWeber/vim-addon-manager.git
 [submodule "bundle/vim-addon-manager-known-repositories"]
 	path = bundle/vim-addon-manager-known-repositories
-	url = git@github.com:MarcWeber/vim-addon-manager
+	url = git@github.com:MarcWeber/vim-addon-manager-known-repositories.git
