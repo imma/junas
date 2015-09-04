@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+function bootstrap {
+  git submodule update --init --recursive
+
+  local tmp_scratch="$(mktemp -t XXXXXX)"
+  trap "$(printf "rm -f '%q'" "$tmp_scratch")" EXIT
+  vim -E -c ":source $tmp_scratch" -c :quit meh || true
+}
+
+bootstrap
