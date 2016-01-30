@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
 
 function bootstrap {
+  case "$(uname -s)" in
+    Linux)
+      sudo aptitude install -y vim
+      ;;
+  esac
+
   app compile gitsubmodule
 
   local tmp_scratch="$(mktemp -t XXXXXX)"
