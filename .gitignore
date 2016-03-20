@@ -1,1 +1,6 @@
 .netrwhist
+
+# vim plugins
+/bundle/Rainbow_Parenthesis/
+/bundle/matchit.zip/
+/bundle/xoria256/
