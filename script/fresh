@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+function junas_fresh {
+  local shome="$(cd -P -- "${BASH_SOURCE%/*}/.." && pwd -P)"
+  source "$shome/script/profile"
+
+  local cnt_changed="$(git status -s --ignore-submodules=untracked | grep -v '^??')"
+
+  if [[ -z "$cnt_changed" ]]; then
+    return 0
+  fi
+
+  return 1
+}
+
+junas_fresh
