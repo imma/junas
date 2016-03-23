@@ -4,13 +4,17 @@ function junas_fresh {
   local shome="$(cd -P -- "${BASH_SOURCE%/*}/.." && pwd -P)"
   source "$shome/script/profile"
 
-  local cnt_changed="$(git status -s --ignore-submodules=untracked | grep -v '^??')"
-
-  if [[ -z "$cnt_changed" ]]; then
-    return 0
+  if [[ ! -x "$(which vim 2>/dev/null || true)" ]]; then
+    return 1
   fi
 
-  return 1
+  local cnt_changed="$(git status -s --ignore-submodules=untracked | grep -v '^??')"
+
+  if [[ -n "$cnt_changed" ]]; then
+    return 1
+  fi
+
+  return 0
 }
 
 junas_fresh
