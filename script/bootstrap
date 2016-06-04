@@ -1,14 +1,19 @@
 #!/usr/bin/env bash
 
 function bootstrap {
+  local shome="$(cd -P -- "${BASH_SOURCE%/*}/.." && pwd -P)"
+  source "$shome/script/profile"
+
+  cd "$shome"
+
   pkg ensure editors/vim
 
   block compile gitsubmodule
 
   local tmp_scratch="$(mktemp -t XXXXXX)"
   trap "$(printf "rm -f '%q'" "$tmp_scratch")" EXIT
-  vim -E -c ":source $tmp_scratch" -c :quit meh || true
-  vim -E -c ":source $tmp_scratch" -c :quit meh || true
+  vim -e -c ":source $tmp_scratch" -c :quit meh || true
+  vim -e -c ":source $tmp_scratch" -c :quit meh || true
 }
 
 bootstrap
