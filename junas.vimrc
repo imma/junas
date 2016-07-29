@@ -1,9 +1,4 @@
-fun Bundle(addons)
-  call vam#ActivateAddons(a:addons, {'auto_install' : 1 })
-  call pathogen#infect()
-endf
-
-set runtimepath+=~/.vim/bundle/vam
+execute pathogen#infect()
 
 set nocompatible
 
