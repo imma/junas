@@ -43,3 +43,6 @@
 [submodule "bundle/jq.vim"]
 	path = bundle/jq.vim
 	url = https://github.com/vito-c/jq.vim
+[submodule "bundle/vim-terraform"]
+	path = bundle/vim-terraform
+	url = https://github.com/hashivim/vim-terraform.git
