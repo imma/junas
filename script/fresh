@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 function junas_fresh {
-  local shome="${_junas_home:-"$(cd -P -- "${BASH_SOURCE%/*}/.." && pwd -P)"}"
+  local shome="$(cd -P -- "${BASH_SOURCE%/*}/.." && pwd -P)"
   source "$shome/script/profile"
 
   if [[ ! -x "${PKG_HOME}/install/bin/vim" ]]; then
