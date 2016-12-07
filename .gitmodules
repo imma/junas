@@ -46,3 +46,6 @@
 [submodule "bundle/vim-terraform"]
 	path = bundle/vim-terraform
 	url = https://github.com/hashivim/vim-terraform.git
+[submodule "bundle/salt-vim"]
+	path = bundle/salt-vim
+	url = https://github.com/saltstack/salt-vim
