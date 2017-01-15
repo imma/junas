@@ -19,12 +19,6 @@
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = git@github.com:tpope/vim-surround
-[submodule "bundle/vim-clojure-highlight"]
-	path = bundle/vim-clojure-highlight
-	url = git@github.com:guns/vim-clojure-highlight
-[submodule "bundle/vim-clojure-static"]
-	path = bundle/vim-clojure-static
-	url = git@github.com:guns/vim-clojure-static
 [submodule "bundle/vim-go"]
 	path = bundle/vim-go
 	url = git@github.com:fatih/vim-go
@@ -40,18 +34,12 @@
 [submodule "bundle/jq"]
 	path = bundle/jq
 	url = https://github.com/vito-c/jq.vim
-[submodule "bundle/jq.vim"]
-	path = bundle/jq.vim
-	url = https://github.com/vito-c/jq.vim
 [submodule "bundle/vim-terraform"]
 	path = bundle/vim-terraform
 	url = https://github.com/hashivim/vim-terraform.git
 [submodule "bundle/salt-vim"]
 	path = bundle/salt-vim
 	url = https://github.com/saltstack/salt-vim
-[submodule "bundle/vim-elixir"]
-	path = bundle/vim-elixir
-	url = https://github.com/elixir-lang/vim-elixir
 [submodule "bundle/vim-jinja"]
 	path = bundle/vim-jinja
 	url = https://github.com/lepture/vim-jinja
