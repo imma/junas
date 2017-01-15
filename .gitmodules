@@ -33,7 +33,7 @@
 	url = https://github.com/vim-scripts/xoria256.vim
 [submodule "bundle/jq"]
 	path = bundle/jq
-	url = https://github.com/vito-c/jq.vim
+	url = https://github.com/vito-c/jq
 [submodule "bundle/vim-terraform"]
 	path = bundle/vim-terraform
 	url = https://github.com/hashivim/vim-terraform.git
