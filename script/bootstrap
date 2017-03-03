@@ -9,7 +9,7 @@ function bootstrap {
   pkg ensure editors/vim
   ln -nfs vim "$PKG_HOME/install/bin/vi"
 
-  block compile gitsubmodule
+  git submodule update --init
 
   local tmp_scratch="$(mktemp -t XXXXXX)"
   trap "$(printf "rm -f '%q'" "$tmp_scratch")" EXIT
