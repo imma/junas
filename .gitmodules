@@ -40,3 +40,7 @@
 [submodule "bundle/jq.vim"]
 	path = bundle/jq.vim
 	url = https://github.com/vito-c/jq.vim
+[submodule "bundle/ansible-vim"]
+	path = bundle/ansible-vim
+	url = git@github.com:pearofducks/ansible-vim
+	branch = master
