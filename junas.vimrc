@@ -3,7 +3,7 @@ execute pathogen#infect()
 set nocompatible
 
 set ruler
-set number
+set nonumber
 syntax on
 
 " Set encoding
