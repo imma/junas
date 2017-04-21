@@ -44,3 +44,7 @@
 	path = bundle/ansible-vim
 	url = git@github.com:pearofducks/ansible-vim
 	branch = master
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = git@github.com:vim-airline/vim-airline
+	branch = master
