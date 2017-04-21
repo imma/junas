@@ -90,7 +90,8 @@ set backupdir=~/.vim/backup
 set directory=~/.vim/backup
 
 " Show (partial) command in the status line
-set showcmd
+set noshowcmd
+set noshowmode
 
 " key bindings
 nnoremap ; :
