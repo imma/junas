@@ -48,3 +48,7 @@
 	path = bundle/vim-airline
 	url = git@github.com:vim-airline/vim-airline
 	branch = master
+[submodule "bundle/vim-markdown"]
+	path = bundle/vim-markdown
+	url = https://github.com/plasticboy/vim-markdown
+	branch = master
