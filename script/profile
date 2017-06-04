@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 function _junas_profile {
-  local shome="${_junas_home:-"$(cd -P -- "$(dirname -- "$BASH_SOURCE")/.." && pwd -P)"}"
+  local shome="${_junas_home:="$(cd -P -- "$(dirname -- "$BASH_SOURCE")/.." && pwd -P)"}"
 }
 
 _junas_profile
