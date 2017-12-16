@@ -16,9 +16,6 @@
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = git@github.com:tpope/vim-surround
-[submodule "bundle/vim-go"]
-	path = bundle/vim-go
-	url = git@github.com:fatih/vim-go
 [submodule "bundle/vim-pi"]
 	path = bundle/vim-pi
 	url = https://bitbucket.org/vimcommunity/vim-pi
