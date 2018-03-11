@@ -1,6 +1,6 @@
 {
   "require": [
-    "pkgsrc",
+    "pkg",
     "git"
   ],
   "versions": {}
