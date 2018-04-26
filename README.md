@@ -1,1 +1,0 @@
-content/junas.md
