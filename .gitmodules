@@ -1,15 +1,6 @@
-[submodule "bundle/vam"]
-	path = bundle/vam
-	url = https://github.com/MarcWeber/vim-addon-manager.git
 [submodule "bundle/Solarized"]
 	path = bundle/Solarized
 	url = https://github.com/altercation/vim-colors-solarized
-[submodule "bundle/dispatch"]
-	path = bundle/dispatch
-	url = https://github.com/tpope/vim-dispatch
-[submodule "bundle/eregex"]
-	path = bundle/eregex
-	url = https://github.com/othree/eregex.vim
 [submodule "bundle/repeat"]
 	path = bundle/repeat
 	url = https://github.com/tpope/vim-repeat
@@ -25,19 +16,9 @@
 [submodule "bundle/vim-terraform"]
 	path = bundle/vim-terraform
 	url = https://github.com/hashivim/vim-terraform.git
-[submodule "bundle/salt-vim"]
-	path = bundle/salt-vim
-	url = https://github.com/saltstack/salt-vim
-[submodule "bundle/vim-jinja"]
-	path = bundle/vim-jinja
-	url = https://github.com/lepture/vim-jinja
 [submodule "bundle/jq.vim"]
 	path = bundle/jq.vim
 	url = https://github.com/vito-c/jq.vim
-[submodule "bundle/ansible-vim"]
-	path = bundle/ansible-vim
-	url = https://github.com/pearofducks/ansible-vim
-	branch = master
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/vim-airline/vim-airline
