@@ -30,9 +30,6 @@
 [submodule "bundle/vim-slime"]
 	path = bundle/vim-slime
 	url = https://github.com/jpalardy/vim-slime
-[submodule "bundle/rainbow"]
-	path = bundle/rainbow
-	url = https://github.com/luochen1990/rainbow
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
 	url = https://github.com/tpope/vim-surround
@@ -45,3 +42,6 @@
 [submodule "vim-parinfer"]
 	path = vim-parinfer
 	url = https://github.com/bhurlow/vim-parinfer
+[submodule "bundle/rainbow_parentheses.vim"]
+	path = bundle/rainbow_parentheses.vim
+	url = https://github.com/kien/rainbow_parentheses.vim
