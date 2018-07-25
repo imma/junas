@@ -160,3 +160,9 @@ au BufRead,BufNewFile *.md set filetype=markdown
 let g:vim_markdown_folding_disabled = 1
 
 imap ww <Esc>
+
+let g:go_version_warning = 0
+
+let g:slime_target = "tmux"
+
+let g:slime_default_config = {"target_pane": "%0"}
