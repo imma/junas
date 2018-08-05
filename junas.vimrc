@@ -163,6 +163,6 @@ imap ww <Esc>
 
 let g:go_version_warning = 0
 
-let g:slime_target = "tmux"
+let g:slime_target = "vimterminal"
 
 let g:slime_default_config = {"socket_name": "default", "target_pane": "%0"}
