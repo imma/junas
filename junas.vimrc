@@ -164,6 +164,8 @@ imap ww <Esc>
 let g:go_version_warning = 0
 
 let g:slime_target = "vimterminal"
-let g:slime_dont_ask_default = 1
+let g:slime_dont_ask_default = 0
 
 let g:slime_default_config = {"socket_name": "default", "target_pane": "%0"}
+let g:slime_vimterminal_config = {"term_name": "repl", "term_rows": "30", "term_finish": "close"}
+
