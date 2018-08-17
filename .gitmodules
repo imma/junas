@@ -57,3 +57,6 @@
 [submodule "bundle/vim-cider"]
 	path = bundle/vim-cider
 	url = https://github.com/clojure-vim/vim-cider
+[submodule "bundle/vim-elixir"]
+	path = bundle/vim-elixir
+	url = https://github.com/elixir-editors/vim-elixir
