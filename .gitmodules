@@ -51,9 +51,6 @@
 [submodule "vim-sensible"]
 	path = vim-sensible
 	url = https://github.com/tpope/vim-sensible
-[submodule "bundle/vim-fireplace"]
-	path = bundle/vim-fireplace
-	url = https://github.com/tpope/vim-fireplace.git
 [submodule "bundle/vim-cider"]
 	path = bundle/vim-cider
 	url = https://github.com/clojure-vim/vim-cider
