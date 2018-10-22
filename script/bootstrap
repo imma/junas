@@ -6,9 +6,6 @@ function bootstrap {
 
   cd "$shome"
 
-  pkg ensure editors/vim
-  ln -nfs vim "$PKG_HOME/install/bin/vi"
-
   git submodule update --init
   git submodule foreach git reset --hard
 
