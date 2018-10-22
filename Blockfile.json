@@ -1,7 +1,5 @@
 {
   "require": [
-    "pkg",
-    "git"
   ],
   "versions": {}
 }
