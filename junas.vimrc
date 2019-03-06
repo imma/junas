@@ -151,9 +151,6 @@ set nojoinspaces
 set nobackup
 set noswapfile
 
-set diffopt+=iwhite
-set diffexpr="-w -b -B"
-
 set guioptions=
 
 au BufRead,BufNewFile *.md set filetype=markdown
