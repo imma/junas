@@ -60,3 +60,6 @@
 [submodule "bundle/vim-helm"]
 	path = bundle/vim-helm
 	url = https://github.com/towolf/vim-helm
+[submodule "bundle/vim-go"]
+	path = bundle/vim-go
+	url = https://github.com/fatih/vim-go.git
