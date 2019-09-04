@@ -10,7 +10,7 @@ syntax on
 set encoding=utf-8
 
 " Whitespace stuff
-set nowrap
+set wrap
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
@@ -135,7 +135,6 @@ set autoindent smartindent
 set showmatch
 
 set hidden
-set nowrap
 set nonumber
 
 set history=1000
