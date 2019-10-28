@@ -4,6 +4,8 @@ let g:vim_markdown_folding_disabled = 1
 
 let g:go_version_warning = 0
 
+nmap EE :IcedStartCljsRepl shadow-cljs app
+
 execute pathogen#infect()
 
 set nocompatible
