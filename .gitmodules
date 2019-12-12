@@ -72,3 +72,6 @@
 [submodule "bundle/aniseed"]
 	path = bundle/aniseed
 	url = https://github.com/Olical/aniseed
+[submodule "bundle/nvim-local-fennel"]
+	path = bundle/nvim-local-fennel
+	url = https://github.com/Olical/nvim-local-fennel
