@@ -4,9 +4,40 @@ let g:vim_markdown_folding_disabled = 1
 
 let g:go_version_warning = 0
 
-nmap EE :IcedStartCljsRepl shadow-cljs app<ENTER>
+nmap Ee :IcedStartCljsRepl shadow-cljs app<ENTER>
 
-nmap EW :IcedDefJump<ENTER>
+nmap Ew :IcedDefJump<ENTER>
+
+nmap <Home><Home> cse(
+nmap <PageUp><PageUp> cse[
+nmap <PageDown><PageDown> cse{
+
+" Contract left
+nmap <Backspace><Backspace> >(
+
+" Expand Left
+nmap <Delete><Backspace> <(
+
+" Expand Right
+nmap <Backspace><Delete> >)
+
+" Contract right
+nmap <Delete><Delete> <)
+
+" insert at beginning of form
+nmap Gf <I
+" insert at end of form
+nmap Fg >I
+
+" move form up
+nmap <PageDown><PageUp> <f
+" move form down
+nmap <PageUp><PageDown> >f
+
+" move element up
+nmap <End><Home> <e
+" move element down
+nmap <Home><End> >e
 
 execute pathogen#infect()
 
