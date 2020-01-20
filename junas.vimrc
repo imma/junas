@@ -4,6 +4,8 @@ let g:vim_markdown_folding_disabled = 1
 
 let g:go_version_warning = 0
 
+let g:pymode_options_max_line_length = 88
+
 nmap Ee :IcedStartCljsRepl shadow-cljs app<ENTER>
 
 nmap Ew :IcedDefJump<ENTER>
