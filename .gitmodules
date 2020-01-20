@@ -57,9 +57,6 @@
 [submodule "bundle/vim-sexp-mappings-for-regular-people"]
 	path = bundle/vim-sexp-mappings-for-regular-people
 	url = http://github.com/tpope/vim-sexp-mappings-for-regular-people.git
-[submodule "bundle/vim-helm"]
-	path = bundle/vim-helm
-	url = https://github.com/towolf/vim-helm
 [submodule "bundle/vim-go"]
 	path = bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
@@ -69,9 +66,6 @@
 [submodule "bundle/ctrlp.vim"]
 	path = bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim
-[submodule "bundle/aniseed"]
-	path = bundle/aniseed
-	url = https://github.com/Olical/aniseed
-[submodule "bundle/nvim-local-fennel"]
-	path = bundle/nvim-local-fennel
-	url = https://github.com/Olical/nvim-local-fennel
+[submodule "bundle/python-mode"]
+	path = bundle/python-mode
+	url = https://github.com/python-mode/python-mode
